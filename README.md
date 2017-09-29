@@ -14,7 +14,7 @@ $ git commit -m 'New chart version'
 
 # How to use it as a helm repo
 
-If you have missed github as a raw review. So simply use the following
+If you might know github has a raw view. So simply use the following:
 
 ```bash
 $ helm repo add sample 'https://raw.githubusercontent.com/kmzfs/helm-repo-in-github/master/'
