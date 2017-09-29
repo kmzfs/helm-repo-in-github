@@ -14,7 +14,7 @@ $ git commit -m 'New chart version'
 
 # How to use it as a helm repo
 
-If you might know github has a raw view. So simply use the following:
+You might know github has a raw view. So simply use the following:
 
 ```bash
 $ helm repo add sample 'https://raw.githubusercontent.com/kmzfs/helm-repo-in-github/master/'
@@ -24,7 +24,7 @@ NAME            	VERSION	DESCRIPTION
 sample/aerospike	0.1.2  	A Helm chart for Aerospike in Kubernetes
 ```
 
-If your repo is private you can create a access "Personal access tokens" and use it like:
+If your repo is private you can create a "Personal access tokens" and use it like:
 
 ```bash
 $ helm repo add sample 'https://MY_PRIVATE_TOKEN@raw.githubusercontent.com/kmzfs/helm-repo-in-github/master/'
