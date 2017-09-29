@@ -17,4 +17,18 @@ $ git commit -m 'New chart version'
 
 If you have missed github as a raw review. So simply use the following
 
-helm repo add sample 'https://raw.githubusercontent.com/kmzos/helm-repo-in-github/master'
+```bash
+$ helm repo add sample 'https://raw.githubusercontent.com/kmzfs/helm-repo-in-github/master/'
+$ helm repo update
+$ helm search aerospike
+NAME            	VERSION	DESCRIPTION
+sample/aerospike	0.1.2  	A Helm chart for Aerospike in Kubernetes
+```
+
+If your repo is private you can create a access "Personal access tokens" and use it like:
+
+```bash
+$ helm repo add sample 'https://MY_PRIVATE_TOKEN@raw.githubusercontent.com/kmzfs/helm-repo-in-github/master/'
+```
+
+Note: Becareful who is creating the token and what is its level of access.
